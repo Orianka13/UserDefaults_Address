@@ -13,6 +13,7 @@
 		591E5D80265291460067046F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 591E5D7E265291460067046F /* Main.storyboard */; };
 		591E5D82265291570067046F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 591E5D81265291570067046F /* Assets.xcassets */; };
 		591E5D85265291570067046F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 591E5D83265291570067046F /* LaunchScreen.storyboard */; };
+		591E5D8D2652A12A0067046F /* AddressesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591E5D8C2652A12A0067046F /* AddressesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		591E5D81265291570067046F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		591E5D84265291570067046F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		591E5D86265291570067046F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		591E5D8C2652A12A0067046F /* AddressesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				591E5D7A265291460067046F /* SceneDelegate.swift */,
 				591E5D7C265291460067046F /* ViewController.swift */,
 				591E5D7E265291460067046F /* Main.storyboard */,
+				591E5D8C2652A12A0067046F /* AddressesTableViewController.swift */,
 				591E5D81265291570067046F /* Assets.xcassets */,
 				591E5D83265291570067046F /* LaunchScreen.storyboard */,
 				591E5D86265291570067046F /* Info.plist */,
@@ -139,6 +142,7 @@
 			files = (
 				591E5D7D265291460067046F /* ViewController.swift in Sources */,
 				591E5D79265291460067046F /* AppDelegate.swift in Sources */,
+				591E5D8D2652A12A0067046F /* AddressesTableViewController.swift in Sources */,
 				591E5D7B265291460067046F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
