@@ -7,13 +7,6 @@
 
 import UIKit
 
-struct KeysDefaults {
-    static let keyCity = "city"
-    static let keyStreet = "street"
-    static let keyHouse = "house"
-    static let keyBuild = "build"
-    static let keyFlat = "flat"
-}
 
 class ViewController: UIViewController {
     
@@ -30,13 +23,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        cityField.text = defaults.string(forKey: KeysDefaults.keyCity)
-        streetField.text = defaults.string(forKey: KeysDefaults.keyStreet)
-        houseField.text = defaults.string(forKey: KeysDefaults.keyHouse)
-        buildField.text = defaults.string(forKey: KeysDefaults.keyBuild)
-        flatField.text = defaults.string(forKey: KeysDefaults.keyFlat)
-        
     }
+    
 
     @IBAction func saveAction(_ sender: UIButton) {
         
@@ -47,13 +35,10 @@ class ViewController: UIViewController {
         let flat = flatField.text!
         
         if !city.isEmpty && !street.isEmpty && !house.isEmpty && !flat.isEmpty {
-            defaults.set(city, forKey: KeysDefaults.keyCity)
-            defaults.set(street, forKey: KeysDefaults.keyStreet)
-            defaults.set(house, forKey: KeysDefaults.keyHouse)
-            defaults.set(build, forKey: KeysDefaults.keyBuild)
-            defaults.set(flat, forKey: KeysDefaults.keyFlat)
+            
+            Base.shared.saveAddress(city: city, street: street, house: house, build: build, flat: flat)
+            self.navigationController?.popViewController(animated: true)
         }
-        
     }
     
 }
